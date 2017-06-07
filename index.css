@@ -1,0 +1,110 @@
+*
+{
+  box-sizing: border-box;
+}
+
+#head
+{
+  background-color: #FFAF00;
+  text-align: center;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 5px;
+}
+
+#submitButton
+{
+  width: 15%;
+  height: 30px;
+  background-color: #FFF;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  position: relative;
+  left: 7.5%;
+}
+
+#submitButton:hover
+{
+    background-color: #EEE;
+}
+
+#inputText
+{
+  width: 70%;
+  height: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 15px;
+  outline: none;
+  float: left;
+  position: relative;
+  left: 7.5%;
+}
+
+h1
+{
+  color: #EFEFEF;
+  margin-bottom: 0;
+  font-size: 40px
+}
+
+ul
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul li
+{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 30px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover
+{
+    background: #ddd;
+}
+
+ul li.checked
+{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.delete
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+
+.delete:hover
+{
+  font-size: 25px;
+}
+
+ul li.checked::before
+{
+    content: '\2714';
+    position: absolute;
+    top: 10px;
+    left: 16px;
+
+}
